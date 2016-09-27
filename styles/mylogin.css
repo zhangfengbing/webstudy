@@ -1,0 +1,86 @@
+/*µÇÂ½Ò³ÃæÑùÊ½*/
+
+#gray{
+    width:100%;
+    height:100%; background:rgba(0,0,0,0.5);
+    position:fixed;/*¹Ì¶¨¶¨Î»*/
+    top:0px;
+    left:0px;
+}
+#tc{
+    width:630px;
+    height:340px;
+    background:#fff;
+    position:absolute;
+    top:150px;
+    left:400px;
+}
+#tc .title{
+    width:630px;
+    height:46px;
+    background:#019875;
+    color:#fff;
+    font-size:22px;
+    line-height:46px;
+    text-indent:15px;
+}
+#tc .title a.close{
+    width:30px;
+    height:31px;
+    display:block;
+    float:right;
+    margin:7px 10px 0px 0px;
+    background:url("../images/close1.png");
+}
+#tc .title a.close:hover{
+    background:url("../images/close2.png");
+}
+#tc .Login{
+    width:320px;
+    height:230px;
+    float:left;/*×ó¸¡¶¯*/
+}
+#tc .Text{
+    width:214px;
+    height:230px;
+    background:#cc3333;
+    float:right;/*ÓÒ¸¡¶¯*/
+}
+#tc .Con{
+    height:230px;
+    padding:30px 20px;
+}
+#tc .Con .Login input.txt{
+    width:320px;
+    height:40px;
+    background:#f3f3f3;
+    border:0px;
+    font-size:16px;
+    font-family:"Î¢ÈíÑÅºÚ";
+    text-indent:10px;
+    margin-bottom:25px;
+}
+#tc .Con .Login p{
+    margin:0px;
+    font-size:14px;
+    color:#666;
+    font-family:"Î¢ÈíÑÅºÚ";
+    margin-bottom:25px;
+}
+#tc .Con .Login p a{
+    color:#666;
+    text-decoration:none;
+    float:right;
+}
+#tc .Con .Login p a:hover{
+    color:#ff3366;
+}
+#tc .Con .Login input.but{
+    width:160px;
+    height:50px;
+    border:0px;
+    background:#019875;
+    color:#fff;
+    font-size:16px;
+    font-family:"Î¢ÈíÑÅºÚ";
+}
