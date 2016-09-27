@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link href="styles/mylogin.css" rel="stylesheet">
+</head>
+<body>
+<div id="gray"></div>
+<div id="tc">
+    <div class="title">登录 <a href="index03.html" class="close"></a></div>
+    <div class="Con">
+        <div class="Login">
+            <form>
+                <input type="text" class="txt" placeholder="请输入邮箱地址">
+                <input type="password" class="txt" placeholder="请输入密码">
+                <p><input type="checkbox" id="ck"><label for="ck">记住我</label>
+                    <a href="#">忘记密码？</a>
+                </p>
+                <input type="submit" class="but" value="登    录" >
+            </form>
+        </div>
+        <div class="Text"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    /*$(".close").click(function(){
+        $("#gray").hide();//隐藏
+        $("#tc").hide();//隐藏
+    });*/
+
+    $(window).resize(function(){
+        auto();
+    });
+
+    function auto(){
+        var _left=($(window).width()-$("#tc").width())/2; //左边距离
+        var _top=($(window).height()-$("#tc").height())/2;//上面距离
+        $("#tc").css({left:_left,top:_top});
+    }
+
+    auto(); //执行函数
+</script>
+</body>
+</html>

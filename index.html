@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Keywords" content="web前端，HTML5">
+    <meta name="Description" content="zhangfengbing的IT学习网站">
+    <title></title>
+    <script src="scripts/jQuery.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+    <link href="styles/font-awesome.css" rel="stylesheet">
+    <link  href="styles/bootstrap.css"  rel="stylesheet">
+    <link href="styles/mycss.css" rel="stylesheet">
+    <style>
+        /*添加动画*/
+        .add{
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1)
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!--标题栏开始-->
+    <header>
+        <img src="images/20.jpg" style="width: 55px;height: 55px;border-radius: 55px" >
+        <a id="logo">WEB前端和PHP学习</a>
+        <div><a href="login.html" class="lg">登陆</a>|<a href="#">注册</a>|<a href="#">会员中心</a></div>
+    </header>
+    <!--标题栏结束-->
+
+
+
+    <!--导航栏开始-->
+    <nav>
+        <ul id="dropmenu">
+            <li class="">HTML
+                <ul>
+                    <li>HTML</li>
+                    <li>HTML5</li>
+
+                </ul>
+            </li>
+            <li class="">CSS
+                <ul>
+                    <li>CSS2</li>
+                    <li>CSS3</li>
+                    <li>BOOTSTRAP</li>
+
+                </ul>
+            </li>
+            <li class="">JAVASCRIPT
+                <ul>
+                    <li class="">DOM</li>
+                    <li class="">BOM</li>
+                    <li class="">AJAX</li>
+                    <li class="">ES6</li>
+                    <li class="">Angular JS</li>
+                    <li class="">NODE JS</li>
+                </ul>
+            </li>
+            <li class="">JQUERY
+                <ul>
+                    <li class="">H5&JQuery</li>
+                    <li class="">CSS3&JQuery</li>
+                    <li class="">TRANSFORM</li>
+
+                </ul>
+            </li>
+            <li class="">BOOTSTRAP
+                <ul>
+                    <li class="">BOOT CSS</li>
+                    <li class="">BOOT JS</li>
+                    <li class="">CHART JS</li>
+                </ul>
+            </li>
+            <li class="">WEB APP
+                <ul>
+                    <li class="">ZEPTO JS</li>
+                    <li class="">RAILS</li>
+                    <li class="">jQuery Mobile</li>
+
+                </ul>
+            </li>
+            <li class="">PHP
+                <ul>
+                    <li class="">PHP&MYSQL</li>
+                    <li class="">MVC</li>
+                    <li class="">ThinkPHP</li>
+                    <li class="">CMS</li>
+                    <li class="">GIT</li>
+
+                </ul>
+            </li>
+            <li class="">ABOUT ME
+                <ul>
+                    <li class="">EXPERIENCE</li>
+                    <li class="">PICTURE</li>
+                    <li class="">CONTACT</li>
+                    <li class="">OTHER</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <!--导航栏结束-->
+
+    <script>
+        var ul=document.getElementById("dropmenu");
+        //console.log(ul);
+        var lis=ul.getElementsByTagName("li");
+        //console.log(lis.length);
+        for(var i=0;i<lis.length;i++){
+            lis[i].addEventListener("mouseover",function(){
+                this.className="active";
+            })
+            lis[i].addEventListener("mouseout",function(){
+                this.className="";
+            })
+        }
+    </script>
+
+    <!--轮播开始-->
+    <div id="myCarousel" class="carousel slide">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="images/1.jpg" alt=""  style="width: 100%;max-height:500px">
+                <div class="carousel-caption">
+                    <h3>理想</h3>
+                    <p>但愿每次回忆，对生活都不感到负疚！</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/2.jpg" alt="" style="width: 100%;max-height:500px">
+                <div class="carousel-caption">
+                    <h3>坚定</h3>
+                    <p>穷且益坚，不坠青云之志！</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/3.jpg" alt="" style="width: 100%;max-height:500px">
+                <div class="carousel-caption">
+                    <h3>团队</h3>
+                    <p>走近原野，才能饱赏春天的美色；融入江河，才能感知夏水的温柔！</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/4.jpg" alt="" style="width: 100%;max-height:500px">
+                <div class="carousel-caption">
+                    <h3>启程</h3>
+                    <p> 既然目标是地平线，留给世界的只能是背影！</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/5.jpg" alt="" style="width: 100%;max-height:500px">
+                <div class="carousel-caption">
+                    <h3>真诚</h3>
+                    <p>感恩帮过你的人，他让你感受到爱与信任!感谢伤害你的人，他让你成长和懂得识别人! </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/6.jpg" alt="" style="width: 100%;max-height:500px">
+                <div class="carousel-caption">
+                    <h3>彼岸</h3>
+                    <p>含累播种的人一定能含笑收获！</p>
+                </div>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" style="left:10% "></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" style="right:10% "></span>
+            <span class="sr-only">Next</span>
+        </a>
+
+    </div>
+    <!--轮播结束-->
+    <script>
+        $('.carousel').carousel()
+    </script>
+
+    <main>
+        <div class="left">
+            <div id="News">
+                <!--<img src="images/title.gif" />-->
+                <h4>&nbsp;&nbsp;热点排行</h4>
+                <!--选项卡开始-->
+                <ul class="sel">
+                    <li class="hover">web</li>
+                    <li>app</li>
+                    <li>git</li>
+                    <li>other</li>
+                </ul>
+                <!--选项卡结束-->
+
+                <!--新闻列表开始-->
+                <div class="NewsCon">
+                    <div class="NewsList" style='display:block;'>
+                        <ul>
+                            <li><a href="https://www.gitbook.com/book/dwqs/frontenddevhandbook/details">前端开发者手册</a></li>
+                            <li><a href="https://github.com/wizardforcel/w3school">W3School 教程整理</a></li>
+                            <li><a href="#">前端资源分享（一）</a></li>
+                            <li><a href="#">正则表达式30分钟入门教程</a></li>
+                            <li><a href="#">前端开发体系建设日记</a></li>
+                            <li><a href="#">HTTP 接口设计指北</a></li>
+                            <li><a href="#">Chrome 开发者工具中文手册</a></li>
+                            <li><a href="#">关于浏览器和网络的 20 项须知</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="NewsList">
+                        <ul>
+                            <li><a href="#">移动APP自动化测试优秀框架Appium API Reference V1.2.0 CN</a></li>
+                            <li><a href="#">JavaScript语言精粹</a></li>
+                            <li><a href="#">Material Design 中文版</a></li>
+                            <li><a href="#">Android学习之路</a></li>
+                            <li><a href="#">Sketch 中文手册</a></li>
+                            <li><a href="#">HTTP/2.0 中文翻译</a></li>
+                            <li><a href="#">移动前端开发收藏夹</a></li>
+                            <li><a href="#">移动Web前端知识库</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="NewsList">
+                        <ul>
+                            <li><a href="http://www.chengweiyang.cn/gitbook/index.html">GitBook简明教程</a></li>
+                            <li><a href="https://snowdream86.gitbooks.io/github-cheat-sheet/content/zh/index.html">GitHub秘籍</a></li>
+                            <li><a href="http://www.worldhello.net/gotgithub/index.html">GotGitHub</a></li>
+                            <li><a href="#">Atom飞行手册中文版</a></li>
+                            <li><a href="#">Markdown·简单的世界</a></li>
+                            <li><a href="#">Atom官方手册</a></li>
+                            <li><a href="#">git-flow 备忘清单</a></li>
+                            <li><a href="#">GitHub漫游指南</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="NewsList">
+                        <ul>
+                            <li><a href="https://github.com/hacke2/hacke2.github.io/issues/2">精彩博客集合</a></li>
+                            <li><a href="http://www.ituring.com.cn/activity/details/2004">图灵开放书翻译计划--C++、Python、Java等</a></li>
+                            <li><a href="http://www.nowamagic.net/librarys/books/contents/jquery">简单易懂的JQuery魔法</a></li>
+                            <li><a href="http://nqdeng.github.io/7-days-nodejs/">七天学会NodeJS</a></li>
+                            <li><a href="https://github.com/alsotang/node-lessons">Node.js 包教不包会</a></li>
+                            <li><a href="https://github.com/zensh/AngularjsTutorial_cn">AngularJS入门教程</a></li>
+                            <li><a href="https://github.com/kokdemo/impress.js-tutorial-in-Chinese">impress.js 中文教程</a></li>
+                            <li><a href="#">程序员的自我修养</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--新闻列表结束-->
+                <script type="text/javascript">
+                    $("ul.sel li").mouseover(function(){
+                        //alert("移上去了");
+                        $(this).addClass("hover").siblings("li").removeClass('hover'); //添加class='hover'
+                        var _index=$(this).index();//获取到序列号
+                        $(".NewsCon .NewsList").eq(_index).show().siblings("div").hide();
+
+                    });
+                </script>
+            </div>
+        </div>
+        <div class="right">
+            <div class="imgList">
+                <ul>
+                    <li>
+                        <a href="https://github.com" target="_blank"><img src="images/pic1.jpg" /></a>
+                        <div class="play"></div>
+                        <div class='showTxt'>面向开源及私有软件项目的托管平台！<br/>海阔凭鱼跃，天高任鸟飞</div>
+                    </li>
+                    <li>
+                        <a href="http://markdownpad.com/" target="_blank"><img src="images/pic2.jpg" /></a>
+                        <div class="play"></div>
+                        <div class='showTxt'>Markdown 其实很简单！<br/>曾梦想仗剑走天涯</div>
+                    </li>
+                    <li>
+                        <a href="https://developer.mozilla.org/en-US/" target="_blank"><img src="images/pic3.jpg" /></a>
+                        <div class="play"></div>
+                        <div class='showTxt'>Web开发最好的资源之一！<br/>为谁风露立中宵</div>
+                    </li>
+                    <li>
+                        <a href="http://www.w3school.com.cn/" target="_blank"><img src="images/pic7.jpg" /></a>
+                        <div class="play"></div>
+                        <div class='showTxt'>为下一代互联网提供了全新的框架和平台！<br/>衣带渐宽终不悔，为伊消得人憔悴</div>
+                    </li>
+                    <li>
+                        <a href="http://www.imooc.com/" target="_blank"><img src="images/pic5.jpg" /></a>
+                        <div class="play"></div>
+                        <div class='showTxt'>国内最大的IT技能学习平台！<br/>春蚕到死丝方尽，蜡炬成灰泪始干</div>
+                    </li>
+                    <li>
+                        <a href="http://www.sublimetext.com/3" target="_blank"><img src="images/pic6.png" /></a>
+                        <div class="play"></div>
+                        <div class='showTxt'>HTML和散文先进的文本编辑器！<br/>山重水复疑无路，柳暗花明又一村</div>
+                    </li>
+
+                </ul>
+            </div>
+
+            <script type="text/javascript">
+                $(".imgList ul li").hover(function(){
+
+                    $(this).find(".play").fadeIn();
+                    $(this).css("z-index",5).siblings("li").css("z-index",0);
+
+                    var _index=$(this).index()+1;
+                    if(_index%3==0){
+                        $(this).find(".showTxt").animate({left:"-263px"},300);
+                    }else{
+                        $(this).find(".showTxt").animate({left:"263px"},300);
+                    }
+
+                },function(){
+                    $(this).find(".play").fadeOut();
+                    $(this).find(".showTxt").animate({left:"0px"},500);
+                });
+            </script>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="foo">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="widget">
+                        <h4 class="title">友情链接</h4>
+                        <div class="content friend-links">
+                            <a href="http://www.bootcss.com/" title="Bootstrap中文网" onclick="_hmt.push(['_trackEvent', 'link', 'click', 'Bootstrap中文网'])" target="_blank">Bootstrap中文网</a>
+                            <a href="http://www.golaravel.com/" title="Laravel中文网" onclick="_hmt.push(['_trackEvent', 'link', 'click', 'Laravel中文网'])" target="_blank">Laravel中文网</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="widget">
+                        <h4 class="title">用到的技术</h4>
+                        <div class="content tag-cloud">
+                            <a href="http://www.bootcss.com/" title="Bootstrap中文网"  target="_blank">Bootstrap</a>
+                            <a href="http://www.ghostchina.com/" title="Ghost中国" target="_blank">Ghost</a>
+                            <a href="http://www.bootcdn.cn/" title="BootCDN"  target="_blank">BootCDN</a>
+                            <a href="http://www.gruntjs.net/" title="Grunt中文网"  target="_blank">Grunt</a>
+                            <a href="http://www.jquery123.com/" title="jQuery中文文档" target="_blank">jQuery</a>
+                            <a href="http://babeljs.cn/" title="Babeljs中文网"  target="_blank">Babeljs</a>
+                            <a href="http://lodashjs.com/" title="lodash中文网"  target="_blank">Lodash</a>
+                            <a href="http://www.gulpjs.com.cn/" title="Gulp中文网"  target="_blank">Gulp</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="widget">
+                        <h4 class="title">赞助商</h4>
+                        <div class="content friend-links">
+                            <a href="#"  target="_blank">哲云科技</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        <div class="">
+            <div class="row">
+                <div class="col-sm-12">
+                    <span>Copyright &copy; <a href="https://github.com/zhangfengbing">我的个人主页</a></span> |
+                    <span>
+                        <a href="http://www.miibeian.gov.cn/" target="_blank">沪ICP备1T885XX6号</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+   <!-- <footer>
+        <div id="footer">
+            <nav role="navigation" class="navbar navbar-public">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <ul class="nav navbar-nav">
+                                <li> <a href="/#">Scholarship</a></li>
+                                <li> <a href="/#">About</a></li>
+                                <li> <a href="/#">Contact Us</a></li>
+                                <li> <a href="/#">We Give Back</a></li>
+                                <li> <a href="/#">Terms &amp; Conditions</a></li>
+                                <li> <a href="/#">Privacy&nbsp;Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3">
+                            <ul class="nav navbar-nav">
+                                <li> <a href="/#">Blog</a></li>
+                                <li> <a href="/#">Categories</a></li>
+                                <li> <a href="#">Store Direcotry</a></li>
+                                <li> <a href="/#">Grocery Coupons</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3">
+                            <ul class="nav navbar-nav"><li>
+                                <p><b>Events</b></p>
+                            </li>
+                                <li> <a href="/#">Mother's Day</a></li>
+                                <li> <a href="/#">4th Of July</a></li>
+                                <li> <a href="/#">Prime Day</a></li>
+                                <li> <a href="/#">Back To School</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3">
+                            <ul class="nav navbar-nav social">
+                                <li>
+                                    <p><b>Contect with us</b></p>
+                                </li>
+                                <li>
+                                    <ul class="icons">
+                                        <li>
+                                            <a href="https://www.facebook.com/" target="_blank" title="Find us on Facebook" alt="PromoCodeWatch Facebook">
+                                                <span class="icon icon-facebook"></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://twitter.com/" target="_blank" title="Follow us on twitter" alt="PromoCodeWatch twitter">
+                                                <span class="icon icon-twitter"></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.instagram.com/promocodewatch/" target="_blank" title="Connect with us on Instagram" alt="PromoCodeWatch Instagram">
+                                                <span class="icon icon-instagram"></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://plus.google.com" target="_blank" title="Join us on Google Plus" alt="PromoCodeWatch Google Plus">
+                                                <span class="icon icon-google-plus"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dcma">
+                                        <a href="http://www.dmca.com/Protection/Status.aspx?ID=25115705-bf3a-42f0-b0d3-9f13c5424e96" title="DMCA.com Protection Status" target="_blank" class="dmca-badge">
+                                        <img src="//images.dmca.com/Badges/dmca_protected_16_120.png?ID=25115705-bf3a-42f0-b0d3-9f13c5424e96" alt="DMCA.com Protection Status">
+                                        </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="container copyright">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <p>&copy;2016 PromoCodeWatch LLC, All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    </footer>-->
+</div>
+</body>
+</html>
